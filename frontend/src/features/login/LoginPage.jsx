@@ -32,6 +32,15 @@ const LoginPage = () => {
             </button>
           </>
         )}
+        <p className="mt-4 text-center text-sm md:text-base">
+          {isLogin ? "Don't have an account?" : "Already have an account?"}
+          <button
+            onClick={() => setIsLogin(!isLogin)}
+            className="text-blue-500 dark:text-blue-400 ml-2 hover:underline"
+          >
+            {isLogin ? "Register" : "Login"}
+          </button>
+        </p>
       </div>
     </div>
   );
